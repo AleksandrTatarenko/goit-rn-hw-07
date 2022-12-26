@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "goit-rn-hw-06",
-    "slug": "goit-rn-hw-06",
+    "name": "goit-rn-hw-07",
+    "slug": "goit-rn-hw-07",
     "version": "1.0.0",
     "orientation": "default",
     "icon": "./src/assets/icon.png",
@@ -22,13 +22,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": ".src/assets/adaptive-icon.png",
+        "foregroundImage": "./src/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "infoPlist": { "NSAppTransportSecurity" : { "NSAllowsArbitraryLoads" : true } }
+      "package": "com.everyday.goitrnhw07"
     },
     "web": {
       "favicon": "./src/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c865752e-1a84-45c5-951c-ac9c3c145595"
+      }
     }
   }
 }
