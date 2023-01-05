@@ -12,7 +12,7 @@ import { Feather } from '@expo/vector-icons';
 
 import  CreatePostsStackScreen  from './main/CreatePostsStackScreen';
 import  PostsStackScreen  from './main/PostsStackScreen';
-import ProfileScreen from './main/ProfileScreen';
+import ProfileStackScreen from './main/ProfileStackScreen';
 
 const MainTab = createBottomTabNavigator();
 
@@ -48,8 +48,8 @@ const Home = ({navigation}) => {
             tabBarItemStyle: { backgroundColor: '#FF6C00', borderRadius: 50},
           }} />
         <MainTab.Screen
-          name='Profile'
-          component={ProfileScreen}
+          name='ProfileStack'
+          component={ProfileStackScreen}
           options={{
             title: 'Мой профиль',
             headerShown: true,

@@ -26,7 +26,6 @@ const PostsScreen = ({ navigation }) => {
     }, []);
 
     return (
-    <View style={styles.container}>
         <View style={styles.container}>
             <FlatList
                 data={posts}
@@ -45,7 +44,7 @@ const PostsScreen = ({ navigation }) => {
                 </View>}
             />
         </View>
-    </View>)
+    )
 };
 
 const styles = StyleSheet.create({
