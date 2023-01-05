@@ -11,8 +11,8 @@ const PostsScreen = ({ navigation }) => {
     const [posts, setPosts] = useState([]);
 
     const getPosts = async () => {
-        const q = query(collection(db, "posts"));
-        const unsubscribe = onSnapshot(q, (querySnapshot) => {
+        const q = await query(collection(db, "posts"));
+        const unsubscribe = await onSnapshot(q, (querySnapshot) => {
             const posts = [];
             querySnapshot.forEach((doc) => {
                 posts.push({...doc.data(), id: doc.id});

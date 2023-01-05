@@ -28,11 +28,8 @@ const Home = ({navigation}) => {
           component={PostsStackScreen}
           options={{
             title: 'Публикации',
+            headerTitleStyle:{marginLeft: 135},
             headerShown: true,
-            headerTitleStyle:{marginLeft: 140},
-            headerRight: () => (<TouchableOpacity style={{ marginRight: 20 }}
-              onPress={() => dispatch(authSignOutUser())}
-            ><Ionicons name="md-exit-outline" size={30} color='#BDBDBD' /></TouchableOpacity>),
             tabBarIcon: ({ focused, size, color }) => (<Ionicons name="grid-outline" size={size} color={color} />),
             tabBarActiveTintColor: '#FF6C00',
             tabBarInactiveTintColor: '#BDBDBD',
@@ -54,7 +51,12 @@ const Home = ({navigation}) => {
           name='Profile'
           component={ProfileScreen}
           options={{
-            headerShown: false,
+            title: 'Мой профиль',
+            headerShown: true,
+            headerTitleStyle:{marginLeft: 135},
+            headerRight: () => (<TouchableOpacity style={{ marginRight: 20 }}
+              onPress={() => dispatch(authSignOutUser())}
+            ><Ionicons name="md-exit-outline" size={30} color='#BDBDBD' /></TouchableOpacity>),
             tabBarIcon: ({ focused, size, color }) => (<Feather name="user" size={size} color={color} />),
             tabBarActiveTintColor: '#FF6C00',
             tabBarInactiveTintColor: '#BDBDBD',
